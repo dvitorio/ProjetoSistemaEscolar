@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25vw;
+    height: fit-content;
+}
+.logo i{
+    cursor: pointer;
+}
+.containerCadastro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: white;
+    box-shadow: 3px 3px 9px lightgrey;
+    z-index: 110;
+}
+.cabecalhoCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 20vh;
+    box-shadow: 3px 3px 6px lightgrey;
+}
+.tituloCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30vw;
+    height: 45px;
+    text-align: center;
+}
+.tituloCadastro h1{
+    font-size: 2rem;
+    color: rgb(82, 157, 228);
+}
+i{
+    cursor: pointer;
+    font-size: 24px;
+    color:rgb(82, 157, 228);
+}
+.tituloCadastro a{
+    font-size: 16px;
+    color:rgb(82, 157, 228);
+}
+.campoBusca input{
+    width: 30vw; 
+    height: 45px;
+    background-color: rgba(225, 233, 240, 0.603);
+    border: 1px solid rgb(136, 189, 238);
+    border-radius: 30px;
+    outline: 0;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.25rem;
+}
+::placeholder{
+    color: rgb(82, 157, 228);
+}
+.campoBusca img{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.pesquisar{
+    width: 25px;
+    height: 25px;
+    padding-left: 20px;
+}

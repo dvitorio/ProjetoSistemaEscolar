@@ -13,7 +13,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(80, 130, 224);
-    visibility: hidden;
+    z-index: 100;
 }
 .imagemLogin{
     border-top-left-radius: 20px;
@@ -72,6 +72,10 @@
     width: 25vw;
     margin-top: 2vh;
 }
+.botoesLogin button a{
+    color: white;
+    text-decoration: none;
+}
 button:hover{
     background-color: rgb(28, 83, 185);
     cursor: pointer;
@@ -79,7 +83,10 @@ button:hover{
 button:active{
     transform: scale(0.9);
 }
-a, h6{
+h6{
     color:rgb(81, 113, 172);
     font-size: 0.75rem;
+}
+.caixaLogin a{
+    color:darkred;
 }
