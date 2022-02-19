@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.areaLogin{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(80, 130, 224);
+    visibility: hidden;
+}
+.imagemLogin{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.caixaLogin{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.imagemLogin, .caixaLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40vw;
+    height: 90vh;
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+.caixaLogin h3{
+    color:rgb(81, 113, 172);
+}
+.caixaLogin img{
+    margin-bottom: 15px;
+}
+.caixaLogin input{
+    margin-top: 10px;
+    width: 25vw;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: 0;
+}
+.caixaLogin input:focus{
+    background-color: rgba(217, 223, 236, 0.753);
+    box-shadow: 3px 3px 6px grey;
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+.caixaLogin button{
+    width: 10vw;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px grey;
+    background-color: rgb(67, 122, 223);
+    cursor: po;
+    color: white;
+    margin: 10px;
+}
+.botoesLogin{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 25vw;
+    margin-top: 2vh;
+}
+button:hover{
+    background-color: rgb(28, 83, 185);
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.9);
+}
+a, h6{
+    color:rgb(81, 113, 172);
+    font-size: 0.75rem;
+}

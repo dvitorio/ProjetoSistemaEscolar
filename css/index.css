@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: min-content;
+    background-color: white;
+}
+.logo{
+    width: 10vw;
+    height: min-content;
+    margin: 2px; 
+}
+.logo img{
+    width: 150px;
+    padding-left: 10px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 58vw;
+    height: 8vh;
+    margin: 2px; 
+}
+.menu a{
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.menu a:hover{
+    background-color: rgb(75, 75, 202);
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+#btnAreaRestrita{
+    background-color: rgb(70, 173, 224);
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 9px grey;
+}
+#btnAreaRestrita:active{
+    transform: scale(0.8);
+    transition: all 0.2s;
+}
+.midias{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 27vw;
+    height: 8vh;
+    margin: 2px; 
+}
+i{
+    color: rgb(48, 48, 177);
+    font-size: 1.6rem;
+}
+.midias i:hover{
+    color:rgb(233, 42, 35);
+    cursor: pointer;
+    transform: scale(1.25);
+    transition: all 0.2s;
+}
+.midias i:active{
+    transform: scale(0.9);
+}
+.paginaPrincipal{
+    width: 100vw;
+    max-height: 80vh;
+    background-color: lightgrey;
+}
+.paginaPrincipal img{
+    width: 100%;
+}
+.slogan{
+    position: absolute;
+    width: 40vw;
+    height: 25vh;
+    top: 40vh;
+    left: 55vw;
+    padding: 20px;
+    background-color: rgba(30, 93, 211, 0.61);
+    border-radius: 20px;
+    text-align: center;
+}
+.slogan h1{
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+.rodape{
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(233, 221, 221);
+}

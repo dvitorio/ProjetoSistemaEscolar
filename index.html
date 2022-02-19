@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Escola</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Open+Sans&family=Roboto:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <div class="cabecalho">
+        <div class="logo">
+            <img src="img/escolaLogo.png" width=250 alt="">
+        </div>
+        <nav class="menu">
+            <a href="#">Sobre</a>
+            <a href="#">Infantil</a>
+            <a href="#">Fundamental</a>
+            <a href="#">Pré-vestibular</a>
+            <a href="#">Contatos</a>
+            <a href="#" id="btnAreaRestrita" onclick="logar()">Área do aluno</a>
+        </nav>
+        <div class="midias">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-telegram"></i>
+        </div>
+    </div>
+
+
+    <div class="paginaPrincipal">
+        <img src="img/capaSite.jpg" alt="Capa do site">
+        <div class="slogan animate__animated animate__fadeInLeft">
+            <h1>Aqui, encaramos a educação como o insumo mais importante para formação do ser humano</h1>
+        </div>
+
+    </div>
+
+
+    <div class="areaLogin animate__animated animate__fadeInLeftBig" id="areaLogin">
+        <div class="imagemLogin">
+            <img src="img/student.png" width=250 alt="">
+        </div>
+
+        <div class="caixaLogin">
+            <img src="img/escolaLogo.png" alt="Logotipo da escola">
+            <h3>Preencha os dados abaixo para acessar o sistema do aluno</h3><br/>
+            <input type="text" id="usuario" placeholder="Usuário ou email">
+            <input type="text" id="senha" placeholder="Senha">
+                <div class="botoesLogin">
+                    <button type="submit" id="btnAcessarLogin">Acessar</button>
+                    <button type="reset" onclick="deslogar()">Cancelar</button>
+                </div>
+            <h6>Esqueceu sua senha? Clique <a href="">aqui,</a> e recupere o acesso ao sistema.</h6>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <h1></h1>
+    </div>
+
+
+</body>
+</html>
