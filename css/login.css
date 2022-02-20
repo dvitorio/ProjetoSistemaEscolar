@@ -12,12 +12,29 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(80, 130, 224);
+    background-color: rgb(10, 36, 85);
     z-index: 100;
 }
 .imagemLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    width: 340px;
+}
+.usuariosLogin{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 20vw;
+    height: 25px;
+}
+.usuariosLogin h3{
+    margin-top: 10px;
 }
 .caixaLogin{
     border-top-right-radius: 20px;
@@ -89,4 +106,5 @@ h6{
 }
 .caixaLogin a{
     color:darkred;
+    font-size: 12px;
 }

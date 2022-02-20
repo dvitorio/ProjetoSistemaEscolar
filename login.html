@@ -23,12 +23,16 @@
     <!--Conteúdo da área de login do sistema-->
     <div class="areaLogin animate__animated animate__fadeInLeftBig" id="areaLogin">
         <div class="imagemLogin">
-            <img src="img/student.png" width=250 alt="">
+            <img src="img/usuarios.png" width=350 alt="">
         </div>
 
         <div class="caixaLogin">
             <img src="img/escolaLogo.png" alt="Logotipo da escola">
-            <h3>Preencha os dados abaixo para acessar o sistema do aluno</h3><br/>
+            <h3>Preencha os dados abaixo para acessar o sistema</h3><br/>
+            <div class="usuariosLogin">
+                <h3> Sou professor </h3><input type="radio" style="width: 15px; box-shadow: none;" name="usuario" id="professor">
+                <h3> Sou aluno </h3><input type="radio" style="width: 15px; box-shadow: none;" name="usuario" id="aluno">
+            </div>    
             <input type="text" id="usuario" placeholder="Usuário ou email">
             <input type="password" id="senha" placeholder="Senha">
                 <div class="botoesLogin">

@@ -3,15 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+h2{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5rem; 
+    color:rgb(82, 157, 228); 
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 .logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 25vw;
-    height: fit-content;
+    width: 20vw;
+    height: 15vh;
 }
 .logo i{
     cursor: pointer;
+}
+.logo img{
+    width: 120px;
 }
 .containerCadastro{
     position: absolute;
@@ -35,13 +48,13 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 30vw;
+    width: 60vw;
     height: 45px;
-    text-align: center;
 }
 .tituloCadastro h1{
     font-size: 2rem;
     color: rgb(82, 157, 228);
+    text-align: left;
 }
 i{
     cursor: pointer;
@@ -52,28 +65,102 @@ i{
     font-size: 16px;
     color:rgb(82, 157, 228);
 }
-.campoBusca input{
-    width: 30vw; 
-    height: 45px;
-    background-color: rgba(225, 233, 240, 0.603);
-    border: 1px solid rgb(136, 189, 238);
-    border-radius: 30px;
-    outline: 0;
-    text-align: left;
-    padding-left: 20px;
-    font-size: 1.25rem;
+.opcoesAcesso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    min-height: 40vh;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
-::placeholder{
-    color: rgb(82, 157, 228);
+.opcoesAcesso h3{
+    margin-bottom: 20px;
 }
-.campoBusca img{
+.portal{
     cursor: pointer;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 19vw;
+    height: 39vh;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 3px 6px 12px lightgrey;
+    margin: 10px;
 }
-.pesquisar{
-    width: 25px;
-    height: 25px;
-    padding-left: 20px;
+.portal:hover{
+    box-shadow: 5px 5px 15px cornflowerblue;
+    transform: scale(1.2);
+}
+.portal:active{
+    transform: scale(0.9);
+}   
+.portalAluno{
+    position: absolute;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px lightgrey;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+    width: 60vw;
+    min-height: 80vh;
+    top: 21vh;
+    left: 20vw;
+    padding: 10px;
+    padding-left: 40px;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.portalAluno input{
+    border: 1px solid rgb(151, 193, 231);
+    border-radius: 5px;
+    height: 40px;
+    outline: 0;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.portalAluno h3{
+    color: rgb(82, 157, 228);
+    margin-bottom: 5px;
+}
+.nivel{
+    color:rgb(82, 157, 228);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 40px;
+    width: 40vw;
+    height: 40px;
+    margin-top: 2vh;
+    border: 1px solid rgb(171, 204, 235);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    color: white;
+    cursor: pointer;
+    width: 10vw;
+    height: 40px;
+    background-color: cornflowerblue;
+    border: 1px solid rgb(122, 122, 233);
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px grey;
+    margin-top: 5vh;
+}
+button:hover{
+    border: none;
+    background-color: darkred;
+    color: white;
+}
+i{
+    color: white;
 }

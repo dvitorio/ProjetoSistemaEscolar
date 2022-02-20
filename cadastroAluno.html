@@ -27,21 +27,47 @@
                     <i class="fa-solid fa-house" id="btnHome" onclick="paginaInicial()"></i>
                 </div>
                 <div class="tituloCadastro">
-                    <h1>Cadastro de Aluno</h1>
-                </div>
-                <div class="campoBusca">
-                    <input type="text" class="pesquisar" placeholder="Pesquisar..."/>
-                    <img src="img/busca.png" alt="">
+                    <h1>Escola Sede de Saber - Sistema de boletim eletrônico</h1>
                 </div>
             </div>
 
-            <form action="">
 
-            </form>
+            <div class="opcoesAcesso">
+                <div class="portal animate__animated animate__backInLeft" onclick="abrirPortalAluno()">
+                    <img src="img/student.png" width=105 alt="">
+                    <h3 style="color: rgb(82, 157, 228);">Portal do aluno</h3>
+                </div>
+    
+                <div class="portal animate__animated animate__backInUp">
+                    <img src="img/teacher.png" width=120 alt="">
+                    <h3 style="color: rgb(82, 157, 228);">Portal do professor</h3>
+                </div>
+
+                <div class="portal animate__animated animate__backInRight">
+                    <img src="img/coordenacao.jpg" width=200 style="margin-bottom: 30px;" alt="">
+                    <h3 style="color: rgb(82, 157, 228);">Coordenação</h3>
+                </div>
+            </div>
+            
+            <div class="portalAluno animate__animated animate__fadeInUpBig" id="portalAluno">
+                <h2>Informações do aluno</h2>
+                <h3>Matrícula</h3><input type="text" id="matricula"><h3>Ingresso</h3><input type="date" name="" id="">
+                <h3>Aluno</h3><input type="text" id="nome" style="width: 40vw; height: 40px;">
+                <h3>E-mail</h3><input type="email" id="email" style="width: 40vw; height: 40px;">
+                    <div class="nivel">
+                        Infantil<input type="radio" name="nivel" id="infantil">
+                        Fundamental I<input type="radio" name="nivel" id="fund_1">
+                        Fundamental II<input type="radio" name="nivel" id="fund_2">
+                        Ensino Médio<input type="radio" name="nivel" id="medio">
+                    </div>
+                <button id="btnAlterar"> <i class="fa-solid fa-pen-to-square"></i> Alterar</button>
+                <button id="btnFechar()" onclick="fecharPortalAluno()"><i class="fa-solid fa-right-from-bracket"></i> Sair</button>
+
+            </div>
+
+
         </div>
     <!--Final do formulário de cadastro-->
-
-
 
 </body>
 </html>
