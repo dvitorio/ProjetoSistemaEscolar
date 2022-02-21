@@ -32,39 +32,103 @@
             </div>
 
 
-            <div class="opcoesAcesso">
-                <div class="portal animate__animated animate__backInLeft" onclick="abrirPortalAluno()">
-                    <img src="img/student.png" width=105 alt="">
+            <div class="opcoesAcesso" id="opcoesAcesso">
+                <div class="portal animate__animated animate__backInLeft">
+                    <img src="img/student.png" alt="">
                     <h3 style="color: rgb(82, 157, 228);">Portal do aluno</h3>
+                    <div class="botoesPortalAluno">
+                        <button onclick="abrirPortalAluno()">Pessoal</button>
+                        <button>Acadêmico</button>
+                        <button>Financeiro</button>
+                    </div>
                 </div>
     
                 <div class="portal animate__animated animate__backInUp">
-                    <img src="img/teacher.png" width=120 alt="">
+                    <img src="img/teacher.png" alt="">
                     <h3 style="color: rgb(82, 157, 228);">Portal do professor</h3>
+                    <div class="botoesPortalProfessor">
+                        <button onclick="abrirPortalProfessor()">Pessoal</button>
+                        <button>Boletim</button>
+                        <button>Avaliações</button>
+                    </div>
                 </div>
 
                 <div class="portal animate__animated animate__backInRight">
-                    <img src="img/coordenacao.jpg" width=200 style="margin-bottom: 30px;" alt="">
+                    <img src="img/coordenacao.png" width=100 style="margin-bottom: 30px;" alt="">
                     <h3 style="color: rgb(82, 157, 228);">Coordenação</h3>
+                    <div class="botoesPortalCoordenacao">
+                        <button onclick="abrirPortalCoordenacao()">Acadêmico</button>
+                        <button>Financeiro</button>
+                        <button>Pessoal</button>
+                    </div>
                 </div>
             </div>
             
+
+            <!--Informações do aluno-->
             <div class="portalAluno animate__animated animate__fadeInUpBig" id="portalAluno">
-                <h2>Informações do aluno</h2>
-                <h3>Matrícula</h3><input type="text" id="matricula"><h3>Ingresso</h3><input type="date" name="" id="">
-                <h3>Aluno</h3><input type="text" id="nome" style="width: 40vw; height: 40px;">
-                <h3>E-mail</h3><input type="email" id="email" style="width: 40vw; height: 40px;">
+                <div class="caixa1">
+                    <h3>Nome</h3><input type="text" id="nome">
+                    <h3>E-mail</h3><input type="email" id="email">
                     <div class="nivel">
-                        Infantil<input type="radio" name="nivel" id="infantil">
-                        Fundamental I<input type="radio" name="nivel" id="fund_1">
-                        Fundamental II<input type="radio" name="nivel" id="fund_2">
-                        Ensino Médio<input type="radio" name="nivel" id="medio">
+                        <label for="">Infantil</label><input type="radio" name="nivel" id="infantil">
+                        <label for="">Fundamental I</label><input type="radio" name="nivel" id="fund1">
+                        <label for="">Fundamental II</label><input type="radio" name="nivel" id="fund2">
+                        <label for="">Médio</label><input type="radio" name="nivel" id="medio">
                     </div>
-                <button id="btnAlterar"> <i class="fa-solid fa-pen-to-square"></i> Alterar</button>
-                <button id="btnFechar()" onclick="fecharPortalAluno()"><i class="fa-solid fa-right-from-bracket"></i> Sair</button>
+                    <div class="celulares">
+                        <div class="celular">
+                            <h3>Celular</h3><input type="tel" name="" id="celular">
+                        </div>
+                        <div class="fixo">
+                            <h3 style="margin-left: 10px;">Fixo</h3>&nbsp;&nbsp;&nbsp;<input type="tel" name="" id="fixo">
+                        </div>
+                    </div>
+                    <h3>Informações complementares</h3><textarea name="infoCompl" id="infoCompl" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="caixa2">
+                    <div class="foto">
+                        <img src="" alt="">
+                    </div>
+                    <h3>Matrícula</h3><input type="text" id="matricula">
+                    <h3>Média geral</h3><input type="text" id="mediaGeral" style="text-align: center; height: 100px; font-size: 2rem; color:rgb(82, 157, 228)">
+                    <div class="botoes">
+                        <button>Imprimir</button>
+                        <button onclick="fechar()">Sair</button>
+                    </div>
+                </div>
 
             </div>
+            <!--Final do conteúdo de informações do aluno-->
 
+
+            <div class="portalProfessor animate__animated animate__fadeInUpBig" id="portalProfessor">
+                <div class="caixa1Professor">
+                    <h3>Nome do professor</h3><input type="text" id="nomeProfessor">
+                    <h3>E-mail</h3><input type="email" id="emailProfessor">
+                    <div class="disciplina">
+                        <label for="disciplina">Artes</label><input type="radio" name="disciplina" id="artes">
+                        <label for="disciplina">Matemática</label><input type="radio" name="disciplina" id="matematica">
+                        <label for="disciplina">História</label><input type="radio" name="disciplina" id="História">
+                        <label for="disciplina">Biologia</label><input type="radio" name="disciplina" id="biologia">
+                        <label for="disciplina">Química</label><input type="radio" name="disciplina" id="quimica">
+                        <label for="disciplina">Física</label><input type="radio" name="disciplina" id="fisica">
+                        <label for="disciplina">Geografia</label><input type="radio" name="disciplina" id="geografia">
+                        <label for="disciplina">Inglês</label><input type="radio" name="disciplina" id="ingles">
+                        <label for="disciplina">Português</label><input type="radio" name="disciplina" id="portugues">
+                    </div>
+                    <div class="celulares">
+                        <div class="celular">
+                            <h3>Celular</h3><input type="tel" name="" id="celular">
+                        </div>
+                        <div class="fixo">
+                            <h3 style="margin-left: 10px;">Fixo</h3>&nbsp;&nbsp;&nbsp;<input type="tel" name="" id="fixo">
+                        </div>
+                    </div>
+                    <h3>Informações complementares</h3><textarea name="infoCompl" id="infoCompl" cols="30" rows="10"></textarea>
+                </div>
+            </div>
 
         </div>
     <!--Final do formulário de cadastro-->

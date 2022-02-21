@@ -17,7 +17,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 20vw;
+    width: 10vw;
     height: 15vh;
 }
 .logo i{
@@ -47,9 +47,10 @@ h2{
 .tituloCadastro{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 60vw;
+    justify-content: center;
+    width: 80vw;
     height: 45px;
+
 }
 .tituloCadastro h1{
     font-size: 2rem;
@@ -85,12 +86,33 @@ i{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 19vw;
+    width: 30vw;
     height: 39vh;
     border: 1px solid lightgrey;
     border-radius: 10px;
     box-shadow: 3px 6px 12px lightgrey;
     margin: 10px;
+}
+.botoesPortalAluno, .botoesPortalProfessor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.botoesPortalAluno button, .botoesPortalProfessor button{
+    width: 120px;
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+}
+.botoesPortalAluno button:hover{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(36, 55, 224);
 }
 .portal:hover{
     box-shadow: 5px 5px 15px cornflowerblue;
@@ -108,9 +130,9 @@ i{
     display: flex;
     align-items: flex-start;
     justify-content: left;
-    flex-direction: column;
+    flex-direction: row;
     width: 60vw;
-    min-height: 80vh;
+    height: fit-content;
     top: 21vh;
     left: 20vw;
     padding: 10px;
@@ -118,49 +140,119 @@ i{
     visibility: hidden;
     transition: all 0.5s;
 }
-.portalAluno input{
-    border: 1px solid rgb(151, 193, 231);
-    border-radius: 5px;
-    height: 40px;
-    outline: 0;
-    padding-left: 10px;
-    margin-bottom: 10px;
+.caixa1{
+    width: 40vw;
+    min-height: 20vh;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
 }
-.portalAluno h3{
-    color: rgb(82, 157, 228);
+.caixa1 h3{
+    color:rgb(82, 157, 228);
+    font-size: 0.9rem;
     margin-bottom: 5px;
 }
+.caixa1 input{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 95%;
+    height: 40px;
+    margin-bottom: 10px;
+    outline: 0;
+    padding: 5px;
+}
 .nivel{
-    color:rgb(82, 157, 228);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    line-height: 40px;
-    width: 40vw;
-    height: 40px;
-    margin-top: 2vh;
-    border: 1px solid rgb(171, 204, 235);
+    justify-content: left;
+
+}
+label{
+    color:rgb(82, 157, 228);
+}
+.nivel input[type=radio]{
+    width: 16px;
+    margin: 2px 10px 0 10px;
+}
+.celulares{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+}
+.celular, .fixo{
+    width: 20vw;
+}
+textarea{
+    width: 95%;
+    height: 15vh;
+    border: 1px solid lightgrey;
     border-radius: 5px;
-    padding: 5px;
+    color:rgb(82, 157, 228);
+    outline: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.caixa2{
+    width: 15vw;
+    min-height: 45vh;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.caixa2 h3{
+    margin: 10px 0 10px 5px;
+    margin-left: 10px;
+    padding-left: 5px;
+    color: rgb(82, 157, 228);
+}
+.caixa2 input{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 92%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    outline: 0;
+}
+.foto{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
-button{
-    color: white;
-    cursor: pointer;
-    width: 10vw;
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+}
+.botoes button{
+    width: 100px;
     height: 40px;
-    background-color: cornflowerblue;
-    border: 1px solid rgb(122, 122, 233);
+    margin-right: 5px;
+    border: 1px solid rgb(212, 200, 200);
     border-radius: 5px;
-    box-shadow: 3px 3px 9px grey;
-    margin-top: 5vh;
 }
-button:hover{
-    border: none;
-    background-color: darkred;
-    color: white;
-}
-i{
-    color: white;
+.portalProfessor{
+    position: absolute;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px lightgrey;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: row;
+    width: 60vw;
+    height: fit-content;
+    top: 21vh;
+    left: 20vw;
+    padding: 10px;
+    padding-left: 40px;
+    visibility: hidden;
+    transition: all 0.5s;
 }
