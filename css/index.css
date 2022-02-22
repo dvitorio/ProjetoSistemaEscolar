@@ -27,7 +27,7 @@ body{
     width: 150px;
     padding-left: 10px;
 }
-.menu{
+.menuPrincipal{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -35,11 +35,11 @@ body{
     height: 8vh;
     margin: 2px; 
 }
-.menu a{
+.menuPrincipal a{
     font-size: 14px;
     padding: 10px 15px;
 }
-.menu a:hover{
+.menuPrincipal a:hover{
     background-color: rgb(75, 75, 202);
     border-radius: 5px;
     color: white;

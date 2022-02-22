@@ -1,7 +1,7 @@
 function logar(){
     const usuario = document.getElementById("usuario").value;
     const senha = document.getElementById("senha").value;
-        if((usuario == "dvitorio2@gmail.com") && (senha == "dvc314900")){
+        if((usuario == "") && (senha == "")){
             window.open("cadastroAluno.html");
             window.close("login.html");
             window.close("index.html");

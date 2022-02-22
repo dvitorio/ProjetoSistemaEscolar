@@ -93,27 +93,6 @@ i{
     box-shadow: 3px 6px 12px lightgrey;
     margin: 10px;
 }
-.botoesPortalAluno, .botoesPortalProfessor{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 28vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-.botoesPortalAluno button, .botoesPortalProfessor button{
-    width: 120px;
-    height: 40px;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    padding: 2px;
-    margin: 2px;
-}
-.botoesPortalAluno button:hover{
-    color: white;
-    cursor: pointer;
-    background-color: rgb(36, 55, 224);
-}
 .portal:hover{
     box-shadow: 5px 5px 15px cornflowerblue;
     transform: scale(1.2);
@@ -139,6 +118,25 @@ i{
     padding-left: 40px;
     visibility: hidden;
     transition: all 0.5s;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 29vw;
+    height: 40px;
+}
+.submenu{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    border: 1px solid grey;
+}
+.submenu a{
+    text-align: left;
 }
 .caixa1{
     width: 40vw;
@@ -224,6 +222,12 @@ textarea{
     margin-left: auto;
     margin-right: auto;
 }
+.botoesPortalAluno button{
+    width: 100px;
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
 .botoes{
     display: flex;
     align-items: center;
@@ -256,3 +260,119 @@ textarea{
     visibility: hidden;
     transition: all 0.5s;
 }
+.caixa1Professor button{
+    width: 10vw;
+    height: 40px;
+    padding: 5px;
+    color: white;
+    border: 1px solid rgb(23, 78, 180);
+    border-radius: 5px;
+    background-color: rgb(23, 78, 180);
+}
+.caixa1Professor input{
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    color: rgb(82, 157, 228);
+    width: 55vw;
+    height: 40px;
+    outline: 0;   
+    padding: 10px;
+}
+.caixa1Professor h3{
+    margin: 10px 0 15px 0;
+}
+.portalProfessor input[type=radio]{
+    width: 14px;
+}
+.disciplina{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 55vw;
+    padding-right: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    margin-top: 20px;
+}
+.celularesProfessor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 55vw;
+    margin: 0;
+}
+.celularesProfessor input{
+    width: 25vw;
+}
+.portalCoordenacao{
+    position: absolute;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px lightgrey;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: row;
+    width: 60vw;
+    height: fit-content;
+    top: 21vh;
+    left: 20vw;
+    padding: 10px;
+    padding-left: 40px;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.notas{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 20vh;
+    left: 25vw;
+    right: auto;
+    min-width: 45vw;
+    min-height: 50vh;
+    background-color: rgb(167, 193, 240);
+    border-radius: 10px;
+    border: 1px solid grey;
+    z-index: 500;
+}
+.un{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 12vw;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin: 10px;
+}
+.un input{
+    width: 10vw;
+    height: 35px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(84, 124, 199);
+    outline: 0;
+}
+#media1, #media2, #media3, #media4{
+    height: 80px;
+    color: cornflowerblue;
+    font-size: 2rem;
+}
+.un h3{
+    padding: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+
+
+

@@ -22,6 +22,8 @@ function fechar(){
 //Acesso e métodos do portal do professor
 
 function abrirPortalProfessor(){
+    let acesso = document.getElementById("opcoesAcesso");
+    acesso.style.display = 'none';
     let portalProf = document.getElementById("portalProfessor");
     portalProf.style.visibility = 'visible';
 }

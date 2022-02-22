@@ -30,38 +30,41 @@
                     <h1>Escola Sede de Saber - Sistema de boletim eletrônico</h1>
                 </div>
             </div>
+    <!--Final do container formulário cadastro-->
 
 
-            <div class="opcoesAcesso" id="opcoesAcesso">
-                <div class="portal animate__animated animate__backInLeft">
-                    <img src="img/student.png" alt="">
-                    <h3 style="color: rgb(82, 157, 228);">Portal do aluno</h3>
-                    <div class="botoesPortalAluno">
-                        <button onclick="abrirPortalAluno()">Pessoal</button>
-                        <button>Acadêmico</button>
-                        <button>Financeiro</button>
-                    </div>
+        <div class="opcoesAcesso" id="opcoesAcesso">
+            <div class="portal animate__animated animate__backInLeft">
+                <img src="img/student.png" alt="">
+                <h3 style="color: rgb(82, 157, 228);">Portal do aluno</h3>
+                <div class="botoesPortalAluno">
+                    <button onclick="abrirPortalAluno()">Geral</button>
+                    <button>Notas</button>
+                    <button>Frequência</button>
                 </div>
-    
-                <div class="portal animate__animated animate__backInUp">
-                    <img src="img/teacher.png" alt="">
-                    <h3 style="color: rgb(82, 157, 228);">Portal do professor</h3>
-                    <div class="botoesPortalProfessor">
-                        <button onclick="abrirPortalProfessor()">Pessoal</button>
-                        <button>Boletim</button>
-                        <button>Avaliações</button>
-                    </div>
-                </div>
+            </div>
 
-                <div class="portal animate__animated animate__backInRight">
-                    <img src="img/coordenacao.png" width=100 style="margin-bottom: 30px;" alt="">
-                    <h3 style="color: rgb(82, 157, 228);">Coordenação</h3>
-                    <div class="botoesPortalCoordenacao">
-                        <button onclick="abrirPortalCoordenacao()">Acadêmico</button>
-                        <button>Financeiro</button>
-                        <button>Pessoal</button>
-                    </div>
+
+            <div class="portal animate__animated animate__backInUp">
+                <img src="img/teacher.png" alt="">
+                <h3 style="color: rgb(82, 157, 228);">Portal do professor</h3>
+                <div class="botoesPortalProfessor">
+                    <button onclick="abrirPortalProfessor()">Pessoal</button>
+                    <button>Boletim</button>
+                    <button>Avaliações</button>
                 </div>
+            </div>
+
+            <div class="portal animate__animated animate__backInRight">
+                <img src="img/coordenacao.png" width=100 style="margin-bottom: 30px;" alt="">
+                <h3 style="color: rgb(82, 157, 228);">Coordenação</h3>
+                <div class="botoesPortalCoordenacao">
+                    <button onclick="abrirPortalCoordenacao()">Acadêmico</button>
+                    <button>Financeiro</button>
+                    <button>Pessoal</button>
+                </div>
+            </div>
+
             </div>
             
 
@@ -95,7 +98,7 @@
                     <h3>Média geral</h3><input type="text" id="mediaGeral" style="text-align: center; height: 100px; font-size: 2rem; color:rgb(82, 157, 228)">
                     <div class="botoes">
                         <button>Imprimir</button>
-                        <button onclick="fechar()">Sair</button>
+                        <button onclick="fechar()">Voltar</button>
                     </div>
                 </div>
 
@@ -118,20 +121,78 @@
                         <label for="disciplina">Inglês</label><input type="radio" name="disciplina" id="ingles">
                         <label for="disciplina">Português</label><input type="radio" name="disciplina" id="portugues">
                     </div>
-                    <div class="celulares">
+                    <div class="celularesProfessor">
                         <div class="celular">
                             <h3>Celular</h3><input type="tel" name="" id="celular">
                         </div>
                         <div class="fixo">
-                            <h3 style="margin-left: 10px;">Fixo</h3>&nbsp;&nbsp;&nbsp;<input type="tel" name="" id="fixo">
+                            <h3>Fixo</h3><input type="tel" name="" id="fixo">
                         </div>
                     </div>
                     <h3>Informações complementares</h3><textarea name="infoCompl" id="infoCompl" cols="30" rows="10"></textarea>
+                    <button>Relatório</button>
+                    <button>Sair</button>
                 </div>
+
             </div>
+
+
+            <div class="portalCoordenacao animate__animated animate__fadeInUpBig" id="portalCoordenacao">
+                <div class="caixa1Coordenacao">
+                    <h3>Coordenador(a)</h3><input type="text" id="nomeCoordenador">
+                    <h3>E-mail</h3><input type="email" id="emailCoordenacao">
+                    <div class="celularesCoordenacao">
+                        <div class="celular">
+                            <h3>Celular</h3><input type="tel" name="" id="celular">
+                        </div>
+                        <div class="fixo">
+                            <h3>Fixo</h3><input type="tel" name="" id="fixo">
+                        </div>
+                    </div>
+                    <h3>Informações complementares</h3><textarea name="infoComplCoord" id="infoComplCoord" cols="30" rows="10"></textarea>
+                    <button>Relatório</button>
+                    <button>Sair</button>
+                </div>
+
+            </div>
+
 
         </div>
     <!--Final do formulário de cadastro-->
+
+
+    <!--Portal de notas-->
+    <div class="notas">
+        <div class="un">
+            <h3>Teste 1</h3><input type="text" id="teste1">
+            <h3>Prova 1</h3><input type="text" id="prova1">
+            <h3>Final 1</h3><input type="text" id="final1">
+            <h3>Média 1</h3><input type="text" id="media1">
+        </div>
+
+        <div class="un">
+            <h3>Teste 2</h3><input type="text" id="teste2">
+            <h3>Prova 2</h3><input type="text" id="prova2">
+            <h3>Final 2</h3><input type="text" id="final2">
+            <h3>Média 2</h3><input type="text" id="media2">
+        </div>
+
+        <div class="un">
+            <h3>Teste 3</h3><input type="text" id="teste3">
+            <h3>Prova 3</h3><input type="text" id="prova3">
+            <h3>Final 3</h3><input type="text" id="final3">
+            <h3>Média 3</h3><input type="text" id="media3">
+        </div>
+
+        <div class="un">
+            <h3>Teste 4</h3><input type="text" id="teste4">
+            <h3>Prova 4</h3><input type="text" id="prova4">
+            <h3>Final 4</h3><input type="text" id="final4">
+            <h3>Média 4</h3><input type="text" id="media4">
+        </div>
+    </div>
+        
+    <!--Final da tela de notas-->
 
 </body>
 </html>
