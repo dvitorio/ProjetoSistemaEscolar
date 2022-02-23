@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/cadastroAluno.css">
     <script src="js/index.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/calcularNotas.js"></script>
     <script src="js/cadastroAluno.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +40,7 @@
                 <h3 style="color: rgb(82, 157, 228);">Portal do aluno</h3>
                 <div class="botoesPortalAluno">
                     <button onclick="abrirPortalAluno()">Geral</button>
-                    <button>Notas</button>
+                    <button onclick="abrirNotas()">Notas</button>
                     <button>Frequência</button>
                 </div>
             </div>
@@ -97,8 +98,8 @@
                     <h3>Matrícula</h3><input type="text" id="matricula">
                     <h3>Média geral</h3><input type="text" id="mediaGeral" style="text-align: center; height: 100px; font-size: 2rem; color:rgb(82, 157, 228)">
                     <div class="botoes">
-                        <button>Imprimir</button>
-                        <button onclick="fechar()">Voltar</button>
+                        <button><i class="fa-solid fa-print" style="font-size: 16px;"></i> Imprimir</button>
+                        <button onclick="fechar()"> <i class="fa-solid fa-circle-xmark" style="font-size: 16px;"></i> Voltar</button>
                     </div>
                 </div>
 
@@ -162,35 +163,37 @@
 
 
     <!--Portal de notas-->
-    <div class="notas">
-        <div class="un">
-            <h3>Teste 1</h3><input type="text" id="teste1">
-            <h3>Prova 1</h3><input type="text" id="prova1">
-            <h3>Final 1</h3><input type="text" id="final1">
-            <h3>Média 1</h3><input type="text" id="media1">
+        <div class="notas animate__animated animate__backInDown" id="notas">
+            
+            <div class="un">
+                <h3>Teste 1</h3><input type="text" id="teste1">
+                <h3>Prova 1</h3><input type="text" id="prova1">
+                <h3>Final 1</h3><input type="text" id="final1" onchange="calcularUnidade1()">
+                <h3>Média 1</h3><input type="text" id="media1">
+            </div>
+    
+            <div class="un">
+                <h3>Teste 2</h3><input type="text" id="teste2">
+                <h3>Prova 2</h3><input type="text" id="prova2">
+                <h3>Final 2</h3><input type="text" id="final2">
+                <h3>Média 2</h3><input type="text" id="media2">
+            </div>
+    
+            <div class="un">
+                <h3>Teste 3</h3><input type="text" id="teste3">
+                <h3>Prova 3</h3><input type="text" id="prova3">
+                <h3>Final 3</h3><input type="text" id="final3">
+                <h3>Média 3</h3><input type="text" id="media3">
+            </div>
+            
+            <div class="un">
+                <h3>Teste 4</h3><input type="text" id="teste4">
+                <h3>Prova 4</h3><input type="text" id="prova4">
+                <h3>Final 4</h3><input type="text" id="final4">
+                <h3>Média 4</h3><input type="text" id="media4">
+            </div>
+            <i class="fa-solid fa-circle-xmark" style="color:red; margin-top: -50vh; padding: 5px" id="btnSairNotas" onclick="sairNotas()"></i>
         </div>
-
-        <div class="un">
-            <h3>Teste 2</h3><input type="text" id="teste2">
-            <h3>Prova 2</h3><input type="text" id="prova2">
-            <h3>Final 2</h3><input type="text" id="final2">
-            <h3>Média 2</h3><input type="text" id="media2">
-        </div>
-
-        <div class="un">
-            <h3>Teste 3</h3><input type="text" id="teste3">
-            <h3>Prova 3</h3><input type="text" id="prova3">
-            <h3>Final 3</h3><input type="text" id="final3">
-            <h3>Média 3</h3><input type="text" id="media3">
-        </div>
-
-        <div class="un">
-            <h3>Teste 4</h3><input type="text" id="teste4">
-            <h3>Prova 4</h3><input type="text" id="prova4">
-            <h3>Final 4</h3><input type="text" id="final4">
-            <h3>Média 4</h3><input type="text" id="media4">
-        </div>
-    </div>
         
     <!--Final da tela de notas-->
 

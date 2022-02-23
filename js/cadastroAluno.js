@@ -18,6 +18,21 @@ function fechar(){
     opcoes.style.display = 'flex';
 }
 
+function abrirNotas(){
+    let abrirNotas = document.getElementById("notas");
+    abrirNotas.style.visibility = 'visible';
+    let opcoes = document.getElementById("opcoesAcesso");
+    opcoes.style.display = 'none';
+}
+
+function sairNotas(){
+    let sairNotas = document.getElementById("notas");
+    sairNotas.style.visibility = 'hidden';
+    let opcoes = document.getElementById("opcoesAcesso");
+    opcoes.style.display = 'flex';
+}
+
+
 
 //Acesso e métodos do portal do professor
 
@@ -27,4 +42,5 @@ function abrirPortalProfessor(){
     let portalProf = document.getElementById("portalProfessor");
     portalProf.style.visibility = 'visible';
 }
+
 

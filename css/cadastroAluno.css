@@ -102,7 +102,7 @@ i{
 }   
 .portalAluno{
     position: absolute;
-    background-color: white;
+    background-color: rgb(167, 193, 240);
     border: 1px solid lightgrey;
     border-radius: 10px;
     box-shadow: 3px 3px 9px lightgrey;
@@ -146,7 +146,7 @@ i{
     padding: 10px;
 }
 .caixa1 h3{
-    color:rgb(82, 157, 228);
+    color:rgb(66, 113, 214);
     font-size: 0.9rem;
     margin-bottom: 5px;
 }
@@ -163,10 +163,9 @@ i{
     display: flex;
     align-items: center;
     justify-content: left;
-
 }
 label{
-    color:rgb(82, 157, 228);
+    color:rgb(66, 113, 214);
 }
 .nivel input[type=radio]{
     width: 16px;
@@ -202,7 +201,7 @@ textarea{
     margin: 10px 0 10px 5px;
     margin-left: 10px;
     padding-left: 5px;
-    color: rgb(82, 157, 228);
+    color: rgb(66, 113, 214);
 }
 .caixa2 input{
     margin-left: 10px;
@@ -222,7 +221,7 @@ textarea{
     margin-left: auto;
     margin-right: auto;
 }
-.botoesPortalAluno button{
+.botoesPortalAluno button, .botoesPortalProfessor button, .botoesPortalCoordenacao button{
     width: 100px;
     height: 35px;
     border: 1px solid grey;
@@ -240,6 +239,10 @@ textarea{
     margin-right: 5px;
     border: 1px solid rgb(212, 200, 200);
     border-radius: 5px;
+    color: rgb(66, 113, 214);
+}
+button:hover{
+    color: white;
 }
 .portalProfessor{
     position: absolute;
@@ -323,7 +326,6 @@ textarea{
     visibility: hidden;
     transition: all 0.5s;
 }
-
 .notas{
     position: absolute;
     display: flex;
@@ -333,11 +335,12 @@ textarea{
     left: 25vw;
     right: auto;
     min-width: 45vw;
-    min-height: 50vh;
+    height: 55vh;
     background-color: rgb(167, 193, 240);
     border-radius: 10px;
     border: 1px solid grey;
     z-index: 500;
+    visibility: hidden;
 }
 .un{
     display: flex;
@@ -364,7 +367,7 @@ textarea{
 }
 #media1, #media2, #media3, #media4{
     height: 80px;
-    color: cornflowerblue;
+    color: rgb(13, 49, 116);
     font-size: 2rem;
 }
 .un h3{
