@@ -342,6 +342,29 @@ button:hover{
     z-index: 500;
     visibility: hidden;
 }
+.caixaFoto{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 5px auto;
+}
+.caixaFoto h3{
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+.foto{
+    width: 120px;
+    height: 120px;
+    background-color: lightgrey;
+    border-radius: 50%;
+}
 .un{
     display: flex;
     align-items: center;

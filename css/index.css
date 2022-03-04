@@ -81,7 +81,7 @@ body{
 }
 .paginaPrincipal{
     width: 100vw;
-    max-height: 80vh;
+    height: 80vh;
     background-color: lightgrey;
 }
 .paginaPrincipal img{
@@ -103,13 +103,13 @@ body{
     text-shadow: 1px 1px 1px black;
     color: white;
 }
-.ensinoMedio{
+.ensinoInfantil{
     width: 100vw;
-    height: 80vh;
-    background-color: rgb(46, 40, 40);
+    height: 70vh;
+    margin-top: 10vh;
 }
-.ensinoMedio img{
-    width: 100%;
+.ensinoInfantil img{
+    width: 100%; 
 }
 .rodape{
     width: 100vw;
